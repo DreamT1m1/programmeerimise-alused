@@ -1,6 +1,6 @@
 # YLESANNE 1.1
 import random
-from math import pi
+from math import pi, sqrt
 
 #1
 print(f"Tere, maailm! Tervitan sind {input('Sisestage enda nimi: ')}! Sa oled {input('Sisestage oma vanus: ')} aastat vana.")
@@ -33,3 +33,45 @@ d = perimeter / pi
 print(f"Puu läbimõõt: {d}")
 
 #5
+n = int(input("Sisestage ristküliku üks mõõde: "))
+m = int(input("Sisestage teine mõõde: "))
+print(f"Ristküliku diagonaal: {round(sqrt(n ** 2 + m ++ 2), 2)}")
+
+#6
+"""
+Leidke järgnevast näiteprogrammist loogiline viga:
+aeg = float(input("Mitu tundi kulus sõiduks? "))
+teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+kiirus = aeg / teepikkus
+
+print("Sinu kiirus oli " + str(kiirus) + " km/h")
+
+Peaks olema teepikkus / aeg
+"""
+
+#7
+print("Sisestage 5 täisarvu")
+a, b, c, d, e = int(input()), int(input()), int(input()), int(input()), int(input()),
+print(f"Aritmeetiline keskmine: {round((a + b + c + d + e) / 5, 2)}")
+
+
+#8
+print("  @..@\n (----)\n(\\__/)\n^^ "" ^^")
+
+#9
+print("Sisestage kolmnurga kolme serva mõõdud")
+a, b, c = int(input()), int(input()), int(input())
+p = a + b + c
+print(f"Kolmnurga ümbermõõt {p}")
+
+#10
+PRICE = 12.9
+people_count = int(input("Sisestage mitme inimese peale võtate pitsat: "))
+tips = 12.9 * 0.1
+print(f"Jätsite {round(tips, 2)} jootraha. Igaüks peab maksma: {round((PRICE - tips) / people_count, 2)}")
+
+#11
+try:
+    some_int = int(input("Sisestage mingi täisarv: "))
+except ValueError:
+    print("Sisestasite vale väärtuse!")
