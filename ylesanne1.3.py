@@ -78,5 +78,5 @@ t = float(input("Enter amount of minutes: "))
 print(f"If speed is {SPEED}, then answer is: {round(SPEED * (t / 60), 2)}")
 
 #10
-minutes = float(input("Enter amount of minutes: "))
+minutes = int(input("Enter amount of minutes: "))
 print(f"{minutes // 60}:{minutes % 60}")
